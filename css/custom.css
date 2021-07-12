@@ -1,0 +1,582 @@
+@import url("reset.css");
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 600px;
+    background: url("../images/horizon-vintage.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(0deg, hsla(0, 0%, 0%, 0.7) 0%, hsla(0, 0%, 58%, 0.4));
+    position: absolute;
+    bottom: 0;
+}
+
+.nav-logo {
+    width: 5.88em;
+    position: absolute;
+    bottom: 30%;
+    opacity: 0.4;
+    margin-left: 8%;
+    overflow: hidden;
+}
+
+.nav-logo img {
+    width: 100%;
+}
+
+nav>ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav>ul>li {
+    float: left;
+    margin-right: 2px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 30px 15px;
+    font-family: 'Josefin Sans', sans;
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #C7C7C7;
+}
+
+nav a:hover {
+    background-color: hsla(0, 0%, 28%, 1);
+}
+
+.we-are {
+    text-align: center;
+    width: 100vw;
+}
+
+.we-are-intro,
+.companies-intro,
+.agencies-intro {
+    margin-bottom: 130px;
+
+}
+
+.we-are-intro h2 {
+    font-family: "Josefin Sans", sans;
+    font-size: 72px;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 20%);
+    margin: 80px auto 20px;
+}
+
+.we-are-intro h2:after {
+    content: "";
+    font-weight: 400;
+    text-transform: uppercase;
+    animation: we-are-content infinite 20s ease-in, we-are-opacity infinite 20s ease-in;
+}
+
+@keyframes we-are-content {
+
+    0%,
+    20% {
+        content: "marketing";
+    }
+
+    21%,
+    40% {
+        content: "cool";
+    }
+
+    41%,
+    60% {
+        content: "knowledge";
+    }
+
+    61%,
+    80% {
+        content: "dynamic";
+    }
+
+    81%,
+    100% {
+        content: "experts";
+    }
+
+}
+
+
+@keyframes we-are-opacity {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        opacity: 0;
+    }
+
+    5%,
+    15%,
+    25%,
+    35%,
+    45%,
+    55%,
+    65%,
+    75%,
+    85%,
+    95% {
+        opacity: 1;
+    }
+
+}
+
+
+.we-are-intro p,
+.companies-intro p,
+.agencies-intro p,
+.technologies-intro p,
+.media-education-intro p {
+    font-family: "Lora", sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    text-align-last: center;
+    line-height: 1.4;
+    color: hsl(0, 0%, 45%);
+    margin-bottom: 60px;
+
+}
+
+
+a.see-history,
+a.know-group {
+    background-color: hsl(0, 0%, 20%);
+    font-family: "Josefin Sans", serif;
+    font-weight: 200;
+    font-size: 24px;
+    color: white;
+    display: inline-block;
+    height: 73px;
+    line-height: 73px;
+    padding: 0 25px;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: 400ms ease-in-out;
+}
+
+
+a.see-history:hover,
+a.know-group:hover {
+    opacity: 0.7;
+
+}
+
+.fa-hourglass-half,
+.fa-users {
+    transition: 400ms ease-in-out;
+    transform: rotate(20deg);
+    margin-right: 20px;
+}
+
+a:hover>.fa-hourglass-half,
+a:hover>.fa-users {
+    transform: rotate(200deg);
+}
+
+
+
+.fa-chevron-right {
+    transition: 400ms ease-in-out;
+    font-size: 20px;
+    margin-left: 20px
+}
+
+a:hover>.fa-chevron-right {
+    transform: translate(10px);
+}
+
+.we-are-values h2,
+.companies-intro h2,
+.agencies-intro h2,
+.technologies-intro h2,
+.media-education-intro h2 {
+    width: 100%;
+    font-family: "Josefin Sans", sans;
+    font-size: 38px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 20%);
+    margin: 80px auto 20px;
+}
+
+.values-items {
+    width: 100%;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 100px;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.val-item {
+    text-align: center;
+}
+
+.val-scope-icon {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 50%;
+    margin: auto;
+}
+
+.val-icon-bg-w {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transform: scale(0.97);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.val-icon-bg-b {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(0.9);
+    transition: transform 200ms linear 50ms;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.val-item:hover .val-icon-bg-b {
+    transform: scale(0);
+}
+
+.val-item .grad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, crimson 20%, yellow 60%, aqua 80%);
+    transition: transform 500ms 50ms;
+    opacity: 0;
+}
+
+.val-item:hover .grad {
+    opacity: 1;
+    animation: rotation infinite 800ms 50ms linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fa-smile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: color 300ms 50ms;
+    color: white;
+    font-size: 70px;
+    z-index: 50;
+}
+
+.val-item:hover .fa-smile {
+    color: black;
+}
+
+.val-scope-title {
+    font-family: "Josefin Sans", serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: hsl(0, 0%, 35%);
+    border-bottom: solid 2px hsl(0, 0%, 20%);
+    margin: 13px auto;
+    position: relative;
+    padding: 8px 0;
+    transform: color 300ms;
+}
+
+.val-scope-title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 0%, 10%);
+    transition: transform 300ms ease-in-out;
+    transform: scaleY(0);
+    transform-origin: 0 100%;
+}
+
+.val-item:hover .val-scope-title::after {
+    transform: scaleY(1);
+}
+
+.val-item:hover .val-scope-title {
+    color: white;
+}
+
+
+.val-scope-description {
+    font-family: "Lora", sans-serif;
+    font-size: 16px;
+    color: hsl(0, 0%, 40%);
+    text-align: center;
+    padding-bottom: 60px
+}
+
+.companies {
+    width: 100vw;
+    text-align: center;
+    padding: 50px 3vw;
+    clear: both;
+    background-color: hsl(0, 0%, 95%);
+
+}
+
+
+.agencies-intro p,
+.technologies-intro p,
+.media-education-intro p {
+    padding-top: 40px;
+}
+
+.agencies-intro h2,
+.technologies-intro h2,
+.media-education-intro h2 {
+    position: relative;
+    font-size: 30px;
+
+}
+
+.agencies-intro h2::before,
+.technologies-intro h2::before,
+.media-education-intro h2::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: hsl(0, 0%, 10%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.agencies-intro h2>span,
+.technologies-intro h2>span,
+.media-education-intro h2>span {
+    background-color: hsl(0, 0%, 95%);
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.agencies-intro h2 img,
+.technologies-intro h2 img,
+.media-education-intro h2 img {
+    position: absolute;
+    left: 50%;
+    top: -90px;
+    transform: translate(-50%);
+}
+
+
+.agencies-logos,
+.technologies-logos,
+.media-education-logos {
+    width: 100%;
+    height: 20.12vw;
+    margin-bottom: 160px;
+}
+
+.agencies-logos>*,
+.technologies-logos>*,
+.media-education-logos>* {
+    width: 31.333vw;
+    height: 20.12vw;
+    overflow: hidden;
+    float: left;
+    position: relative;
+
+}
+
+.agencies-logos>*:after,
+.technologies-logos>*:after,
+.media-education-logos>*::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: hsla(0, 0%, 20%, 0.5);
+    font-size: 1rem;
+    font-style: italic;
+    padding: 20px;
+    color: white;
+    transition: transform 200ms 50ms;
+}
+
+.agencies-logos>*:hover::after,
+.technologies-logos>*:hover::after,
+.media-education-logos>*:hover::after {
+    transform: translateY(-100%);
+
+}
+
+.agencies-logos .logo-1 {
+    background-color: hsl(4, 81%, 53%);
+}
+
+.agencies-logos .logo-2 {
+    background-color: hsl(12, 80%, 56%);
+}
+
+.agencies-logos .logo-3 {
+    background-color: hsl(252, 25%, 48%);
+}
+
+.agencies-logos>* img,
+.technologies-logos>* img,
+.media-education-logos>* img {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 400ms 50ms;
+}
+
+.agencies-logos>*:hover img,
+.technologies-logos>*:hover img,
+.media-education-logos>*:hover img {
+    top: 35%;
+}
+
+
+.technologies-logos .logo-1 {
+    background-color: hsl(181, 100%, 35%);
+}
+
+.technologies-logos .logo-2 {
+    background-image: linear-gradient(90deg, hsl(190, 29%, 45%) 0%, hsl(327, 49%, 43%) 100%);
+}
+
+.technologies-logos .logo-3 {
+    background-color: hsl(330, 71%, 51%);
+}
+
+
+.media-education-logos {
+    height: 40.24vw;
+}
+
+.media-education-logos .logo-1 {
+    background-color: hsl(182, 100%, 35%);
+}
+
+.media-education-logos .logo-2 {
+    background-color: hsl(82, 66%, 44%);
+}
+
+.media-education-logos .logo-3 {
+    background-color: hsl(31, 89%, 53%);
+}
+
+.media-education-logos .logo-4 {
+    background-color: hsl(203, 71%, 55%);
+}
+
+.media-education-logos .logo-5 {
+    background-color: hsl(0, 0%, 13%);
+}
+
+
+/* ------------------  media-dependent styles------------ */
+
+@media screen and (max-width:800px) {
+    .we-are {
+        padding: 0 10px;
+    }
+
+    .val-item {
+        width: 100%;
+        padding: 2.5vw;
+    }
+}
+
+
+
+
+@media screen and (min-width:801px) and (max-width:1120px) {
+    .we-are {
+        padding: 0 60px;
+    }
+
+    .val-item {
+        width: 50%;
+        padding: 25px;
+    }
+}
+
+
+
+
+@media screen and (min-width:1121px) {
+    .we-are {
+        padding: 0 120px;
+    }
+
+    .val-item {
+        width: 25%;
+        padding: 35px;
+    }
+}
+
+/* -------------  media dependant styles  END ---------- */
