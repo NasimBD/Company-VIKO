@@ -539,13 +539,17 @@ a:hover>.fa-chevron-right {
 
 
 footer{
-    background-color:  hsla(0, 0%, 10%, 0.8);
+    background-color: #bdb9b9;
 }
 
 footer p{
-    color: gray;
+    font: 0.8rem sans-serif;
+    color: hsl(0, 0%, 30%);
     padding: 20px;
     text-align: center;
+}
+footer p a {
+    color: darkgreen;
 }
 /* ------------------  media-dependent styles------------ */
 
